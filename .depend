@@ -1,0 +1,201 @@
+apdu.o: src/apdu.c include/bits.h include/apdu.h include/bacdef.h \
+ include/bacenum.h include/config.h include/bacdef.h include/bacdcode.h \
+ include/datetime.h include/bacstr.h include/bacint.h include/bacreal.h \
+ include/bits.h include/bacenum.h include/tsm.h include/npdu.h \
+ include/dcc.h include/iam.h include/bacaddr.h
+npdu.o: src/npdu.c include/bacdef.h include/bacenum.h include/config.h \
+ include/bacdcode.h include/bacdef.h include/datetime.h include/bacstr.h \
+ include/bacint.h include/bacreal.h include/bits.h include/bacint.h \
+ include/bacenum.h include/bits.h include/npdu.h include/apdu.h
+bacdcode.o: src/bacdcode.c include/bacdef.h include/bacenum.h \
+ include/config.h include/bacdcode.h include/bacdef.h include/datetime.h \
+ include/bacstr.h include/bacint.h include/bacreal.h include/bits.h \
+ include/bacenum.h include/bits.h include/bacstr.h include/bacint.h \
+ include/bacreal.h
+bacint.o: src/bacint.c include/config.h include/bacint.h
+bacreal.o: src/bacreal.c include/bacdef.h include/bacenum.h \
+ include/config.h include/bacdcode.h include/bacdef.h include/datetime.h \
+ include/bacstr.h include/bacint.h include/bacreal.h include/bits.h \
+ include/bacenum.h include/bits.h include/bacstr.h include/bacint.h \
+ include/bacreal.h
+bacstr.o: src/bacstr.c include/config.h include/bacstr.h include/bacdef.h \
+ include/bacenum.h include/config.h include/bits.h
+bacapp.o: src/bacapp.c include/bacenum.h include/bacdcode.h \
+ include/bacdef.h include/bacenum.h include/config.h include/datetime.h \
+ include/bacstr.h include/bacint.h include/bacreal.h include/bits.h \
+ include/bacint.h include/bacreal.h include/bacdef.h include/bacapp.h \
+ include/bacdevobjpropref.h include/bactext.h include/indtext.h \
+ include/datetime.h include/bacstr.h
+bacprop.o: src/bacprop.c include/bacprop.h include/bacenum.h
+bactext.o: src/bactext.c include/indtext.h include/bacenum.h \
+ include/bactext.h include/indtext.h
+bactimevalue.o: src/bactimevalue.c include/bacdcode.h include/bacdef.h \
+ include/bacenum.h include/config.h include/datetime.h include/bacstr.h \
+ include/bacint.h include/bacreal.h include/bits.h include/bactimevalue.h \
+ include/bacapp.h include/bacdevobjpropref.h
+datetime.o: src/datetime.c include/datetime.h include/bacdcode.h \
+ include/bacdef.h include/bacenum.h include/config.h include/datetime.h \
+ include/bacstr.h include/bacint.h include/bacreal.h include/bits.h
+indtext.o: src/indtext.c include/indtext.h
+key.o: src/key.c include/key.h
+keylist.o: src/keylist.c include/keylist.h include/key.h
+proplist.o: src/proplist.c include/bacenum.h include/bacdef.h \
+ include/bacenum.h include/config.h include/bacdcode.h include/bacdef.h \
+ include/datetime.h include/bacstr.h include/bacint.h include/bacreal.h \
+ include/bits.h include/rpm.h include/bacapp.h include/bacdevobjpropref.h \
+ include/proplist.h include/rp.h include/rp.h include/proplist.h
+debug.o: src/debug.c include/debug.h include/bacdef.h include/bacenum.h \
+ include/config.h
+bigend.o: src/bigend.c include/bigend.h
+arf.o: src/arf.c include/bacenum.h include/bacdcode.h include/bacdef.h \
+ include/bacenum.h include/config.h include/datetime.h include/bacstr.h \
+ include/bacint.h include/bacreal.h include/bits.h include/bacdef.h \
+ include/arf.h include/bacdcode.h
+awf.o: src/awf.c include/bacenum.h include/bacdcode.h include/bacdef.h \
+ include/bacenum.h include/config.h include/datetime.h include/bacstr.h \
+ include/bacint.h include/bacreal.h include/bits.h include/bacdef.h \
+ include/awf.h include/bacdcode.h
+cov.o: src/cov.c include/bacenum.h include/bacdcode.h include/bacdef.h \
+ include/bacenum.h include/config.h include/datetime.h include/bacstr.h \
+ include/bacint.h include/bacreal.h include/bits.h include/bacdef.h \
+ include/bacapp.h include/bacdevobjpropref.h include/cov.h \
+ include/bacapp.h
+dcc.o: src/dcc.c include/bacenum.h include/bacdcode.h include/bacdef.h \
+ include/bacenum.h include/config.h include/datetime.h include/bacstr.h \
+ include/bacint.h include/bacreal.h include/bits.h include/bacdef.h \
+ include/dcc.h
+iam.o: src/iam.c include/bacenum.h include/bacdef.h include/bacenum.h \
+ include/config.h include/npdu.h include/bacdef.h include/dcc.h \
+ include/bacstr.h include/bacdcode.h include/datetime.h include/bacint.h \
+ include/bacreal.h include/bits.h include/address.h include/readrange.h \
+ include/iam.h include/bacaddr.h include/npdu.h
+ihave.o: src/ihave.c include/bacenum.h include/bacdcode.h \
+ include/bacdef.h include/bacenum.h include/config.h include/datetime.h \
+ include/bacstr.h include/bacint.h include/bacreal.h include/bits.h \
+ include/bacdef.h include/ihave.h
+rd.o: src/rd.c include/bacenum.h include/bacdcode.h include/bacdef.h \
+ include/bacenum.h include/config.h include/datetime.h include/bacstr.h \
+ include/bacint.h include/bacreal.h include/bits.h include/bacdef.h \
+ include/rd.h
+rp.o: src/rp.c include/bacenum.h include/bacdcode.h include/bacdef.h \
+ include/bacenum.h include/config.h include/datetime.h include/bacstr.h \
+ include/bacint.h include/bacreal.h include/bits.h include/bacdef.h \
+ include/rp.h
+rpm.o: src/rpm.c include/bacenum.h include/bacerror.h include/bacenum.h \
+ include/bacdcode.h include/bacdef.h include/config.h include/datetime.h \
+ include/bacstr.h include/bacint.h include/bacreal.h include/bits.h \
+ include/bacdef.h include/bacapp.h include/bacdevobjpropref.h \
+ include/memcopy.h include/rpm.h include/bacapp.h include/proplist.h \
+ include/rp.h
+timesync.o: src/timesync.c include/bacenum.h include/bacdcode.h \
+ include/bacdef.h include/bacenum.h include/config.h include/datetime.h \
+ include/bacstr.h include/bacint.h include/bacreal.h include/bits.h \
+ include/bacdef.h include/bacapp.h include/bacdevobjpropref.h \
+ include/timesync.h
+whohas.o: src/whohas.c include/bacenum.h include/bacdcode.h \
+ include/bacdef.h include/bacenum.h include/config.h include/datetime.h \
+ include/bacstr.h include/bacint.h include/bacreal.h include/bits.h \
+ include/bacdef.h include/whohas.h
+whois.o: src/whois.c include/bacenum.h include/bacdcode.h \
+ include/bacdef.h include/bacenum.h include/config.h include/datetime.h \
+ include/bacstr.h include/bacint.h include/bacreal.h include/bits.h \
+ include/bacdef.h include/whois.h
+wp.o: src/wp.c include/bacenum.h include/bacdcode.h include/bacdef.h \
+ include/bacenum.h include/config.h include/datetime.h include/bacstr.h \
+ include/bacint.h include/bacreal.h include/bits.h include/bacdef.h \
+ include/wp.h include/bacdcode.h include/bacapp.h \
+ include/bacdevobjpropref.h
+wpm.o: src/wpm.c include/bacapp.h include/bacdef.h include/bacenum.h \
+ include/config.h include/bacstr.h include/datetime.h \
+ include/bacdevobjpropref.h include/bacenum.h include/bacdcode.h \
+ include/bacint.h include/bacreal.h include/bits.h include/bacdef.h \
+ include/wp.h include/bacdcode.h include/bacapp.h include/wpm.h \
+ include/wp.h
+abort.o: src/abort.c include/bacenum.h include/bacdcode.h \
+ include/bacdef.h include/bacenum.h include/config.h include/datetime.h \
+ include/bacstr.h include/bacint.h include/bacreal.h include/bits.h \
+ include/bacdef.h include/abort.h
+reject.o: src/reject.c include/bacenum.h include/bacdcode.h \
+ include/bacdef.h include/bacenum.h include/config.h include/datetime.h \
+ include/bacstr.h include/bacint.h include/bacreal.h include/bits.h \
+ include/bacdef.h include/reject.h
+bacerror.o: src/bacerror.c include/bacenum.h include/bacdcode.h \
+ include/bacdef.h include/bacenum.h include/config.h include/datetime.h \
+ include/bacstr.h include/bacint.h include/bacreal.h include/bits.h \
+ include/bacdef.h include/bacerror.h
+ptransfer.o: src/ptransfer.c include/bacenum.h include/bacdcode.h \
+ include/bacdef.h include/bacenum.h include/config.h include/datetime.h \
+ include/bacstr.h include/bacint.h include/bacreal.h include/bits.h \
+ include/bacdef.h include/ptransfer.h
+memcopy.o: src/memcopy.c include/memcopy.h
+filename.o: src/filename.c include/filename.h
+tsm.o: src/tsm.c include/bits.h include/apdu.h include/bacdef.h \
+ include/bacenum.h include/config.h include/bacdef.h include/bacdcode.h \
+ include/datetime.h include/bacstr.h include/bacint.h include/bacreal.h \
+ include/bits.h include/bacenum.h include/tsm.h include/npdu.h \
+ include/config.h include/datalink.h include/bip.h ports/linux/net.h \
+ include/bvlc.h include/handlers.h include/apdu.h include/bacapp.h \
+ include/bacdevobjpropref.h include/rd.h include/rp.h include/rpm.h \
+ include/proplist.h include/wp.h include/bacdcode.h include/readrange.h \
+ include/getevent.h include/timestamp.h include/event.h \
+ include/bacpropstates.h include/get_alarm_sum.h include/alarm_ack.h \
+ include/address.h include/bacaddr.h
+bacaddr.o: src/bacaddr.c include/config.h include/bacdef.h \
+ include/bacenum.h include/config.h include/bacaddr.h include/bacdef.h
+address.o: src/address.c include/config.h include/bacaddr.h \
+ include/bacdef.h include/bacenum.h include/config.h include/address.h \
+ include/readrange.h include/bacstr.h include/datetime.h include/bacdef.h \
+ include/bacdcode.h include/bacint.h include/bacreal.h include/bits.h \
+ include/readrange.h
+bacdevobjpropref.o: src/bacdevobjpropref.c include/bacdcode.h \
+ include/bacdef.h include/bacenum.h include/config.h include/datetime.h \
+ include/bacstr.h include/bacint.h include/bacreal.h include/bits.h \
+ include/npdu.h include/timestamp.h include/bacdcode.h \
+ include/bacdevobjpropref.h
+bacpropstates.o: src/bacpropstates.c include/bacdcode.h include/bacdef.h \
+ include/bacenum.h include/config.h include/datetime.h include/bacstr.h \
+ include/bacint.h include/bacreal.h include/bits.h include/npdu.h \
+ include/timestamp.h include/bacdcode.h include/bacpropstates.h \
+ include/bacapp.h include/bacdevobjpropref.h include/timestamp.h
+alarm_ack.o: src/alarm_ack.c include/alarm_ack.h include/bacenum.h \
+ include/bacapp.h include/bacdef.h include/config.h include/bacstr.h \
+ include/datetime.h include/bacdevobjpropref.h include/timestamp.h \
+ include/bacdcode.h include/bacint.h include/bacreal.h include/bits.h
+event.o: src/event.c include/event.h include/bacenum.h include/bacapp.h \
+ include/bacdef.h include/config.h include/bacstr.h include/datetime.h \
+ include/bacdevobjpropref.h include/timestamp.h include/bacdcode.h \
+ include/bacint.h include/bacreal.h include/bits.h \
+ include/bacpropstates.h include/bacdcode.h include/npdu.h \
+ include/timestamp.h
+getevent.o: src/getevent.c include/bacenum.h include/bacdcode.h \
+ include/bacdef.h include/bacenum.h include/config.h include/datetime.h \
+ include/bacstr.h include/bacint.h include/bacreal.h include/bits.h \
+ include/bacdef.h include/getevent.h include/timestamp.h \
+ include/bacdcode.h include/event.h include/bacapp.h \
+ include/bacdevobjpropref.h include/bacpropstates.h
+get_alarm_sum.o: src/get_alarm_sum.c include/bacdcode.h include/bacdef.h \
+ include/bacenum.h include/config.h include/datetime.h include/bacstr.h \
+ include/bacint.h include/bacreal.h include/bits.h \
+ include/get_alarm_sum.h include/bacapp.h include/bacdevobjpropref.h \
+ include/timestamp.h include/bacdcode.h include/npdu.h
+readrange.o: src/readrange.c include/bacenum.h include/bacdcode.h \
+ include/bacdef.h include/bacenum.h include/config.h include/datetime.h \
+ include/bacstr.h include/bacint.h include/bacreal.h include/bits.h \
+ include/bacdef.h include/readrange.h
+timestamp.o: src/timestamp.c include/timestamp.h include/bacdcode.h \
+ include/bacdef.h include/bacenum.h include/config.h include/datetime.h \
+ include/bacstr.h include/bacint.h include/bacreal.h include/bits.h
+version.o: src/version.c include/version.h
+bip-init.o: ports/linux/bip-init.c include/bacdcode.h include/bacdef.h \
+ include/bacenum.h include/config.h include/datetime.h include/bacstr.h \
+ include/bacint.h include/bacreal.h include/bits.h include/bip.h \
+ include/npdu.h ports/linux/net.h ports/linux/net.h
+bvlc.o: src/bvlc.c include/bacenum.h include/bacdcode.h include/bacdef.h \
+ include/bacenum.h include/config.h include/datetime.h include/bacstr.h \
+ include/bacint.h include/bacreal.h include/bits.h include/bacint.h \
+ include/bvlc.h include/npdu.h include/bip.h ports/linux/net.h \
+ include/debug.h
+bip.o: src/bip.c include/bacdcode.h include/bacdef.h include/bacenum.h \
+ include/config.h include/datetime.h include/bacstr.h include/bacint.h \
+ include/bacreal.h include/bits.h include/bacint.h include/bip.h \
+ include/npdu.h ports/linux/net.h include/bvlc.h include/bip.h
